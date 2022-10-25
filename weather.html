@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogoWeather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+            <div class="top_bar">
+                <h1 class="page_topic">DojoWeather</h1>
+                <div class="city">
+                    <h2 onclick="clickCity()">Burbank</h2>
+                    <h2 onclick="clickCity()">Chicago</h2>
+                    <h2 onclick="clickCity()">Dollas</h2>
+                </div>
+            </div>
+            <div class="main">
+                <div class="top_information">
+                    <h2>San Jose</h2>
+                    <div class="tempreture_options">
+                        <label>show temperatuer in </label>
+                        <select class="tempreture_unit" onchange="chooseTempretureParameter()">
+                            <option>F</option>
+                            <option>C</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="weather_cards_container">
+                    
+                    <div class="weather_day_card">
+                        <h2 class="day">Today</h2>
+                        <img src="assets/some_rain.png" alt="rain">
+                        <p class="weather_description">some rain</p>
+                        <div class="tempreture_range">
+                            <h2 class="max_temp temp" id="max_temp_today">75</h2>
+                            <h2 class="min_temp temp" id="min_temp_today">65</h2>
+                        </div>
+                    </div>
+                    <div class="weather_day_card">
+                        <h2 class="day">Tomorrow</h2>
+                        <img src="assets/some_sun.png" alt="sun">
+                        <p class="weather_description">some sun</p>
+                        <div class="tempreture_range">
+                            <h2 class="max_temp temp" id="max_temp_tomorrow">80</h2>
+                            <h2 class="min_temp temp" id="min_temp_tomorrow">66</h2>
+                        </div>
+                    </div>
+                    <div class="weather_day_card">
+                        <h2 class="day">Friday</h2>
+                        <img src="assets/some_clouds.png" alt="cloud">
+                        <p class="weather_description">some clouds</p>
+                        <div class="tempreture_range">
+                            <h2 class="max_temp temp" id="max_temp_friday">69</h2>
+                            <h2 class="min_temp temp" id="min_temp_friday">61</h2>
+                        </div>
+                    </div>
+                    <div class="weather_day_card">
+                        <h2 class="day">Saturday</h2>
+                        <img src="assets/some_sun.png" alt="sun">
+                        <p class="weather_description">some sun</p>
+                        <div class="tempreture_range">
+                            <h2 class="max_temp temp" id="max_temp_saturday">78</h2>
+                            <h2 class="min_temp temp" id="min_temp_saturday">70</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="cookie">
+                    <img src="assets/cookie.png" alt="cookie_icon">
+                    <div class="cookie_content">
+                        <h3>Stop! Cookie time</h3>
+                        <p>we use cookies(sadly sadly not the edible ones) to personalze content and ads
+                            ,to provide social media features and to analyse our traffic. <a href="">Read more...</a>
+                        </p>
+                    </div>
+                    <button class="accept_button" onclick="acceptCookie()">I Accept</button>
+                </div>
+            </div>
+        </div>
+    <script src="weather.js"></script>
+    </body>
+    </html>
