@@ -3,7 +3,7 @@ console.log("page uploaded")
 function clickCity(){
     alert("Loading weather report....")
 }
-
+//////////
 function acceptCookie(){
     document.querySelector(".cookie").remove();
 }
